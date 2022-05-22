@@ -1,0 +1,27 @@
+{
+  "name": "get-slapped",
+  "version": "1.0.0",
+  "description": "Get slapped across the face.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "bin": {
+    "get-slapped": "./index.js"
+  },
+  "author": {
+    "name": "Pedro Moreira",
+    "email": "pdcmoreira@gmail.com"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pdcmoreira/get-slapped"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "node-wav-player": "^0.2.0"
+  }
+}
