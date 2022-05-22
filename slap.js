@@ -1,4 +1,5 @@
 const player = require("node-wav-player");
+const chalk = require("chalk");
 
 const damageRange = [15, 20];
 const critChance = 28;
@@ -31,10 +32,12 @@ module.exports = async (slapReceiver = console.log) => {
   await actionTime(1000);
 
   if (slap.isCrit) {
-    slapReceiver("Critical hit!");
+    slapReceiver(chalk.bold.red("Critical hit!"));
 
     await actionTime(1000);
   }
 
-  slapReceiver(`You have been slapped for ${slap.damage} damage!`);
+  slapReceiver(
+    `You have been slapped for ${chalk.bold.yellow(slap.damage)} damage!`
+  );
 };
