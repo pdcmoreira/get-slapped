@@ -23,7 +23,7 @@ module.exports = async (slapReceiver = console.log) => {
   const slap = getSlap();
 
   try {
-    player.play({
+    await player.play({
       path: `./sounds/${slap.isCrit ? "slap-crit" : "slap"}.wav`,
     });
   } catch (error) {}
